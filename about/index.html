@@ -1,27 +1,180 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acerca de MTGS Tool: Por que fue creado y nuestro compromiso con la confianza GSM</title>
-    <subtitle>Conoce por que fue creado MTGS Tool. Nuestra misión es darle tranquilidad y seguridad a los Técnicos y Talleres con servicios GSM confiables.</subtitle>
     <meta name="description" content="Conoce por que fue creado MTGS Tool. Nuestra misión es darle tranquilidad y seguridad a los Técnicos y Talleres con servicios GSM confiables.">
     <meta name="author" content="MTGS Team - Multi Tech GSM Server Team">
     <meta name="robots" content="index, follow">
-    <meta name="keywords" content="servicios GSM Costa Rica, plataforma GSM confiable, técnicos GSM Costa Rica, taller GSM, desbloqueo GSM, reparación IMEI, bypass FRP, bypass MDM, signal repair, testpoint, herramientas GSM, Multi Tech GSM Server, MTGS Tool, créditos GSM, pagos seguros GSM, sinpe GSM, servidor GSM CR, comunidad GSM, soporte GSM, evitar estafas GSM, san josé, alajuela, cartago, heredia, liberia, MTGS, samsung repair, huawei repair, xiaomi repair, motorola repair, unlcok tool, chimera tool, sigma key, EDL mode, fastboot, ADB, SP Flash Tool, Testpoint, ISP pinout, UART, JTAG, BGA, reprogramación, firmware, stock ROM, custom ROM, bootloader, root, jailbreak (menos común en Android), unlock bootloader, relock bootloader, certificación Google, safetynet, widevine L1, baseband, qualcomm, mediatek, spreadtrum, hisilicon, exynos, Quitar cuenta Google, quitar FRP, eliminar MDM, cambio de IMEI (legal/solo reparación), reparación de señal sin servicio, reparación de baseband, activación de celular, desbloqueo de operador (carrier unlock), desbloqueo de red, liberación de fábrica, reparación de software, solución de bootloop, Servicios GSM sin estafas, plataforma GSM transparente, servidor GSM confiable, comunidad GSM verificada, técnicos GSM honestos, sistema anti-estafa, respaldo en servicios GSM, garantía en trabajos GSM, foro GSM confiable, opiniones reales GSM, MTGS Tool seguridad, pagos protegidos GSM, recarga de créditos segura, servicios server reales, no más servicios fantasmas, Comprar créditos GSM Costa Rica, recargar MTGS Tool, pago SINPE móvil, transferencia bancaria Costa Rica, pago con USDT, pago con criptomonedas, pago Binance Pay, tarjeta de crédito/débito, Paypal (si aplica), factura electrónica, precios transparentes, Samsung A series (A01, A10, A20, A30, A50, A70, etc.), Samsung S series (S20, S21, S22, S23, S24), Samsung Note series, Huawei P series, Huawei Mate series, Xiaomi Redmi Note (todos los números), Xiaomi Poco (X3, F3, M3, etc.), iPhone (aunque no hagas IMEI, sí para MDM/desbloqueo), Motorola G series, LG (aunque ya no fabrique, hay mucho en circulación), Alcatel, ZTE, Nokia, Liberty Costa Rica (antigua Cabletica - Movistar), Kolbi ICE, Movistar Costa Rica, Tuyo Móvil, Fullmóvil">
     <meta property="og:title" content="Acerca de MTGS Tool: Por que fue creado y nuestro compromiso con la confianza GSM">
     <meta property="og:description" content="Conoce por que fue creado MTGS Tool. Nuestra misión es darle tranquilidad y seguridad a los Técnicos y Talleres con servicios GSM confiables.">
-    <meta property="og:image" content="https://info.mtgstool.com/images/MTGS%20Tool.jpeg">
+    <meta property="og:image" content="https://www.mtgstool.com/images/MTGS%20Tool%20Logo.png">
     <meta property="og:type" content="website">
     <link rel="sitemap" type="application/xml" href="https://www.mtgstool.com/sitemap.xml">
+    <link rel="canonical" href="https://info.mtgstool.com/about">
+    <link rel="icon" href="../images/start.png" type="image/png">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            background-image: url('../images/Fondo MTGS.png');
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            width: 100vw;
+            min-height: 100vh;
+            overflow-x: hidden;
+            color: #FFFFFF;
+            padding: 0;
+            user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            touch-action: manipulation;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            display: flex;
+            justify-content: flex-start;
+            width: 100vw;
+            min-height: 27px;
+            align-items: center;
+            padding: 18px;
+            gap: 18px;
+        }
+
+        .time-label {
+            color: #FFFFFF;
+            letter-spacing: 0.3px;
+            background-color: rgba(0, 0, 0, 0.81);
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            border-radius: 9px;
+            padding: 9px;
+            font-size: 13px;
+        }
+
+        .mtgs-home-btn {
+            color: #FFFFFF;
+            letter-spacing: 0.3px;
+            background-color: #14cc70;
+            border: none;
+            border-radius: 6px;
+            padding: 9px 18px;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            display: inline-block;
+            white-space: nowrap;
+        }
+
+        .mtgs-home-btn:hover {
+            background-color: #0f8860;
+        }
+
+        .mtgs-home-btn:active {
+            background-color: #0a6648;
+        }
+
+        .cta-text {
+            color: #ff4444;
+            letter-spacing: 0.3px;
+            background-color: rgba(0, 0, 0, 0.81);
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            border-radius: 9px;
+            padding: 9px;
+            font-size: 13px;
+            font-weight: 600;
+            white-space: nowrap;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+
+        /* Main Content */
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100vw;
+            min-height: calc(100vh - 120px);
+            padding: 0 20px;
+        }
+
+        /* Widget */
+        .widget {
+            background-color: rgba(15, 25, 40, 0.72);
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            border-radius: 18px;
+            padding: 30px;
+            max-width: 800px;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .widget-content {
+            color: #FFFFFF;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .widget-content pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .widget-content a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+
+        .widget-content a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100vw;
+            text-align: center;
+            font-size: 9px;
+            color: rgba(255, 255, 255, 0.7);
+            padding: 9px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 9px; }
+        ::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.3); }
+        ::-webkit-scrollbar-thumb { background: rgba(0, 212, 255, 0.3); border-radius: 5px; }
+        ::-webkit-scrollbar-thumb:hover { background: rgba(0, 212, 255, 0.5); }
+    </style>
 </head>
 <body>
-    <h1 class="hidden">MTGS Tool - Plataforma GSM Profesional</h1>
-    <p class="hidden">MTGS Tool es una plataforma GSM profesional diseñada para conectar a Técnicos y Talleres con Servicios GSM confiables y puedan hacer su trabajo sin complicaciones técnicas con una interfaz clara y, lo más importante, sin depender de terceros para procesos simples vía Server.</p>
-<pre>[ES]
-<b>🔹¿QUÉ ES MTGS TOOL?</b>
+    <div class="top-bar">
+        <div class="time-label" id="timeLabel">Hora del Servidor (UTC-6):</div>
+        <a href="https://www.mtgstool.com" class="mtgs-home-btn">¡Visita nuestra Web Principal Ahora!</a>
+        <span class="cta-text"><<< ¡Click Aqui para conocer mas de nosotros!</span>
+    </div>
 
+    <div class="main-content">
+        <div class="widget">
+            <div class="widget-content">
+                <pre>
+<b>🔹¿QUÉ ES MTGS TOOL?</b>
 Es una Plataforma GSM Profesional diseñada para conectar a Técnicos y Talleres con Servicios GSM confiables y puedan hacer su trabajo sin complicaciones técnicas con una interfaz clara y, lo más importante, sin depender de terceros para procesos simples vía Server.
 
-</b>MTGS Tool</b> nace de una necesidad real que enfrentamos como taller: encontrar una herramienta GSM que fuera confiable, clara y que protegiera nuestro trabajo y dinero.
+
+<b>MTGS Tool</b> nace de una necesidad real que enfrentamos como taller: encontrar una herramienta GSM que fuera confiable, clara y que protegiera nuestro trabajo y dinero.
 Durante años vimos cómo técnicos y talleres perdían dinero por plataformas inseguras, servicios que no respondían y procesos que dejaban más dudas que soluciones. Vimos también cómo muchos abandonaban el servicio técnico por desconfianza o por sentirse solos frente a problemas que no debían ser tan complicados.
 Por eso decidimos construir algo diferente. Algo que nos gustaría haber tenido desde el principio.
 
@@ -29,34 +182,31 @@ No queríamos solo una herramienta. Queríamos una forma distinta de trabajar.
  • Una donde la seguridad no fuera un agregado, sino la base.
  • Una donde el técnico pudiera concentrarse en lo que sabe hacer, sin distracciones ni temores.
  • Una donde un taller pudiera crecer sin depender de personas externas ni sistemas improvisados.
-<i>Así nació <b>MTGS Tool</b>.</i>
 
+<i>Así nació <b>MTGS Tool</b>.</i>
 Hoy, <b>MTGS Tool</b> es usada por talleres y técnicos independientes en <b>Costa Rica</b>.
  • No prometemos magia. Prometemos control.
  • No prometemos resultados imposibles. Prometemos procesos claros y soporte real.
  • No somos la plataforma con más funciones. Queremos ser la plataforma en la que más se confía.
 <i>Creemos que la tecnología debe proteger a quien la usa, no ponerlo en riesgo.</i>
-
 <b>Esto es solo el comienzo.</b>
 Seguimos construyendo, escuchando y mejorando. Porque si algo nos enseñó el mundo GSM, es que la confianza no se pide: se gana todos los días.
 
 <b>🔹CARACTERÍSTICAS PRINCIPALES:</b>
-
 ✓ Centraliza <b>servicios GSM</b> en un solo sistema
  • <b>Menos pasos, más control, más seguridad.</b>
-
 ✓ Acceso rápido y seguro a tu cuenta de usuario y servicios disponibles
  • Conexión segura con cifrado de contraseñas.
  • Verificación mediante <b>OTP (One-Time Password/Código de 6 dígitos)</b> enviado a nuestros clientes desde la API Oficial de WhatsApp para Registro y Login
  • Depósitos y envío de órdenes requieren el uso de <b>TOTP (Obligatorio)</b>, este es un estándar de alta seguridad que asegura al sistema la interacción de un ser humano antes de procesos críticos.
-  <i>Utilizamos el mismo estándar de empresas bancarias como el <b>Banco Nacional, BCR, etc.</b></i>
- • Detección de inactividad para resetear la aplicación y borrar datos sensibles <b>(5 minutos).</b>
- • <b>MTGS Tool</b> nunca guarda los datos sensibles del cliente de manera local (PC Cliente/Cookies), lo que quiere decir que <b>MTGS Tool</b> no deja rastros.
+  
+<i>Utilizamos el mismo estándar de empresas bancarias como el <b>Banco Nacional, BCR, etc.</b></i>
+• Detección de inactividad para resetear la aplicación y borrar datos sensibles <b>(5 minutos).</b>
+• <b>MTGS Tool</b> nunca guarda los datos sensibles del cliente de manera local (PC Cliente/Cookies), lo que quiere decir que <b>MTGS Tool</b> no deja rastros.
  • Cada inicio de sesión es único porque las Verificaciones y Autorizaciones son manejadas en tiempo real con límites de tiempos estrictos.
   <i>Recomendamos usar conexiones a Internet de al menos 15-30 Mbps y evitar el uso de VPN.</i>
- • Cifrado de Extremo a Extremo <b>(E2EE)</b>, el mismo estándar que usan los bancos y las aplicaciones de mensajería más seguras como <b>WhatsApp o Signal.</b>
-  <i>Respetamos la privacidad de nuestros clientes por diseño, por eso la privacidad es el fundamento de nuestro servicio.</i>
-
+• Cifrado de Extremo a Extremo <b>(E2EE)</b>, el mismo estándar que usan los bancos y las aplicaciones de mensajería más seguras como <b>WhatsApp o Signal.</b>
+<i>Respetamos la privacidad de nuestros clientes por diseño, por eso la privacidad es el fundamento de nuestro servicio.</i>
 ✓ Interfaz moderna simple, directa y responsiva
  • Detección automática de conectividad a Internet al arranque.
  • Soporte multi-idioma (Español e Inglés).
@@ -64,25 +214,26 @@ Seguimos construyendo, escuchando y mejorando. Porque si algo nos enseñó el mu
  • Hora del servidor en tiempo real (UTC-6).
 
 <b>🔹REQUISITOS Y RECOMENDACIONES:</b>
-
- • Cuenta de WhatsApp válida para recibir <b>códigos OTP.</b>
- • Conexión a <b>Internet de alta velocidad</b> para verificación de identidad (en caso de requerir servicios desde un lugar lejano a América/Europa o si su conexión a Internet es lenta, contactar soporte).
+• Cuenta de WhatsApp válida para recibir <b>códigos OTP.</b>
+• Conexión a <b>Internet de alta velocidad</b> para verificación de identidad (en caso de requerir servicios desde un lugar lejano a América/Europa o si su conexión a Internet es lenta, contactar soporte).
  • <b>Aplicación para TOTP</b> (recomendamos cualquiera de las siguientes)
-<div style="text-align: center;"><a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&pcampaignid=web_share">Autenticador de Google Play Store</a> / <a href="https://apps.apple.com/es/app/google-authenticator/id388497605">Apple Store</a>
-<a href="https://play.google.com/store/apps/details?id=com.azure.authenticator&pcampaignid=web_share">Autenticador de Microsoft Play Store</a> / <a href="https://apps.apple.com/es/app/microsoft-authenticator/id983156458">Apple Store</a>
-<a href="https://www.authy.com/download/">Authy</a>
-<a href="https://www.binaryboot.com/totp-authenticator">TOTP Authenticator</a></div>
- • Para evitar filtraciones de nombre de usuario o contraseña por intercepción de datos en su computadora, recomendamos encarecidamente <b>NO</b> usar <b>MTGS Tool</b> en la misma computadora que se utilizan Herramientas de desbloqueo avanzadas o de dudosa procedencia como aplicaciones crackeadas u alteradas, porque este tipo de aplicaciones requieren el equipo en estados como:
+
+<div style="text-align: center;">
+    <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&pcampaignid=web_share">Autenticador de Google Play Store</a> / <a href="https://apps.apple.com/es/app/google-authenticator/id388497605">Apple Store</a>
+    <a href="https://play.google.com/store/apps/details?id=com.azure.authenticator&pcampaignid=web_share">Autenticador de Microsoft Play Store</a> / <a href="https://apps.apple.com/es/app/microsoft-authenticator/id983156458">Apple Store</a>
+    <a href="https://www.authy.com/download/">Authy</a>
+    <a href="https://www.binaryboot.com/totp-authenticator">TOTP Authenticator</a>
+</div>
+• Para evitar filtraciones de nombre de usuario o contraseña por intercepción de datos en su computadora, recomendamos encarecidamente <b>NO</b> usar <b>MTGS Tool</b> en la misma computadora que se utilizan Herramientas de desbloqueo avanzadas o de dudosa procedencia como aplicaciones crackeadas u alteradas, porque este tipo de aplicaciones requieren el equipo en estados como:
  --- modo de prueba / modo seguro.
  --- antivirus desactivado.
  --- drivers complejos no firmados, etc.
  • <b>MTGS Tool</b> está pensado para adquirir acceso a los servidores de forma segura en entornos seguros y puede correr en paralelo con antivirus o programas de detección de malware.
  • No necesita de drivers complejos, ya que los procesos complejos se hacen de forma local en las computadoras ya configuradas de manera concreta para funcionar correctamente.
   
-<i>Nota: Si usted es usuario de VPN le recomendamos <a href="https://windscribe.com/download">Windscribe(Miami)</a> ya que mejorará la conexión con nuestros servidores.</i>
-  
-<i>Usar VPN lejanas a América/Europa aumentará la latencia/distancia de la conexión y puede ocasionar problemas de registro o inicio de sesión.</i>
 
+<i>Nota: Si usted es usuario de VPN le recomendamos <a href="https://windscribe.com/download">Windscribe(Miami)</a> ya que mejorará la conexión con nuestros servidores.</i>
+<i>Usar VPN lejanas a América/Europa aumentará la latencia/distancia de la conexión y puede ocasionar problemas de registro o inicio de sesión.</i>
 Para más información, contacta con nuestro equipo de soporte en el area de contacto en la pagina principal o al email <a href="mailto:soporte@mtgstool.com">soporte@mtgstool.com</a>.
 
 Gracias por confiar en nosotros.
@@ -90,45 +241,41 @@ Gracias por confiar en nosotros.
 
 [EN]
 <b>🔹WHAT IS MTGS TOOL?</b>
-
 Is a Professional GSM Platform designed to connect Technicians and Workshops with reliable GSM services, allowing them to perform their work without technical complications, through a clear interface and, most importantly, without relying on third parties for simple server-side processes.
 
-</b>MTGS Tool</b> was born out of a real need we faced as a workshop: to find a GSM tool that was reliable, clear, and that would protect our work and money.
-For years, we saw technicians and workshops lose money due to insecure platforms, unresponsive services, and processes that created more doubts than solutions. We also saw many people leave technical service out of distrust or because they felt alone when facing problems that shouldn’t have been so complicated.
-That’s why we decided to build something different. Something we would have liked to have from the very beginning.
+<b>MTGS Tool</b> was born out of a real need we faced as a workshop: to find a GSM tool that was reliable, clear, and that would protect our work and money.
+For years, we saw technicians and workshops lose money due to insecure platforms, unresponsive services, and processes that created more doubts than solutions. We also saw many people leave technical service out of distrust or because they felt alone when facing problems that shouldn't have been so complicated.
+That's why we decided to build something different. Something we would have liked to have from the very beginning.
 
-🔹 We didn’t just want a tool. We wanted a different way of working.
-• One where security wasn’t an add-on, but the foundation.
+🔹 We didn't just want a tool. We wanted a different way of working.
+• One where security wasn't an add-on, but the foundation.
 • One where the technician could focus on what they do best, without distractions or fears.
 • One where a workshop could grow without depending on outsiders or improvised systems.
-<i>That’s how <b>MTGS Tool</b> was born.</i>
 
+<i>That's how <b>MTGS Tool</b> was born.</i>
 Today, <b>MTGS Tool</b> is used by workshops and independent technicians in <b>Costa Rica</b>.
-• We don’t promise magic. We promise control.
-• We don’t promise impossible results. We promise clear processes and real support.
+• We don't promise magic. We promise control.
+• We don't promise impossible results. We promise clear processes and real support.
 • We are not the platform with the most features. We want to be the platform that is most trusted.
 <i>We believe technology should protect those who use it, not put them at risk.</i>
-
 <b>This is just the beginning.</b>
-We keep building, listening, and improving. Because if the GSM world taught us anything, it’s that trust isn’t asked for: it’s earned every day.
+We keep building, listening, and improving. Because if the GSM world taught us anything, it's that trust isn't asked for: it's earned every day.
 
 <b>🔹MAIN FEATURES</b>
-
 ✓ Centralizes <b>GSM Services</b> into a single system
  • <b>Fewer steps, more control, more security.</b>
-
- ✓ Fast and secure access to your user account and available services
+✓ Fast and secure access to your user account and available services
  • Secure connection with encrypted passwords.
  • Verification through <b>OTP (One-Time Password/6-digit code)</b> sent to our clients from the Official WhatsApp API for Registration and Login.
  • Deposits and order submissions require the use of <b>TOTP (Mandatory)</b>, which is a high-security standard that ensures human interaction before critical processes.
-  <i>We use the same security standard adopted by banking institutions such as <b>Banco Nacional, BCR, and others.</b></i>
- • Inactivity detection to reset the application and erase sensitive data <b>(5 minutes).</b>
- • <b>MTGS Tool</b> never stores sensitive client data locally (client PC / cookies), meaning no residual traces are left behind by <b>MTGS Tool.</b>
- • Each login session is unique, as verifications and authorizations are handled in real time with strict time limits.
+  
+<i>We use the same security standard adopted by banking institutions such as <b>Banco Nacional, BCR, and others.</b></i>
+• Inactivity detection to reset the application and erase sensitive data <b>(5 minutes).</b>
+• <b>MTGS Tool</b> never stores sensitive client data locally (client PC / cookies), meaning no residual traces are left behind by <b>MTGS Tool.</b>
+• Each login session is unique, as verifications and authorizations are handled in real time with strict time limits.
   <i>We recommend using an internet connection of at least 15–30 Mbps and avoiding the use of VPNs.</i>
- • End-to-End Encryption <b>(E2EE)</b>, the same standard used by banks and secure messaging apps such as <b>WhatsApp and Signal.</b>
-  <i>We respect the privacy of our clients by design. Privacy is the foundation of our service.</i>
-
+• End-to-End Encryption <b>(E2EE)</b>, the same standard used by banks and secure messaging apps such as <b>WhatsApp and Signal.</b>
+<i>We respect the privacy of our clients by design. Privacy is the foundation of our service.</i>
 ✓ Modern, simple, direct, and responsive interface
  • Automatic internet connectivity detection at startup.
  • Multi-language support (Spanish and English).
@@ -136,28 +283,71 @@ We keep building, listening, and improving. Because if the GSM world taught us a
  • Real-time server time display (UTC-6).
 
 <b>🔹REQUIREMENTS AND RECOMMENDATIONS:</b>
-
- • A valid WhatsApp account to receive <b>OTP codes.</b>
- • <b>High-speed internet connection</b> for identity verification (if services are required from locations far from America/Europe or if your internet connection is slow, please contact support).
+• A valid WhatsApp account to receive <b>OTP codes.</b>
+• <b>High-speed internet connection</b> for identity verification (if services are required from locations far from America/Europe or if your internet connection is slow, please contact support).
  • A <b>TOTP authenticator application</b> (We recommend any of the next apps)
-<div style="text-align: center;"><a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&pcampaignid=web_share">Google Authenticator Play Store</a> / <a href="https://apps.apple.com/es/app/google-authenticator/id388497605">Apple Store</a>
-<a href="https://play.google.com/store/apps/details?id=com.azure.authenticator&pcampaignid=web_share">Microsoft Authenticator Play Store</a> / <a href="https://apps.apple.com/es/app/microsoft-authenticator/id983156458">Apple Store</a>
-<a href="https://www.authy.com/download/">Authy</a>
-<a href="https://www.binaryboot.com/totp-authenticator">TOTP Authenticator</a></div>
- • To prevent username or password leaks due to data interception on your computer, we strongly recommend <b>NOT</b> using <b>MTGS Tool</b> on the same computer where advanced or dubious unlocking tools, such as cracked or modified applications, are used, because these types of applications require the computer to be in states such as:
+
+<div style="text-align: center;">
+    <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&pcampaignid=web_share">Google Authenticator Play Store</a> / <a href="https://apps.apple.com/es/app/google-authenticator/id388497605">Apple Store</a>
+    <a href="https://play.google.com/store/apps/details?id=com.azure.authenticator&pcampaignid=web_share">Microsoft Authenticator Play Store</a> / <a href="https://apps.apple.com/es/app/microsoft-authenticator/id983156458">Apple Store</a>
+    <a href="https://www.authy.com/download/">Authy</a>
+    <a href="https://www.binaryboot.com/totp-authenticator">TOTP Authenticator</a>
+</div>
+• To prevent username or password leaks due to data interception on your computer, we strongly recommend <b>NOT</b> using <b>MTGS Tool</b> on the same computer where advanced or dubious unlocking tools, such as cracked or modified applications, are used, because these types of applications require the computer to be in states such as:
  --- Test mode / safe mode.
  --- Disabled antivirus.
  --- Unsigned or complex drivers.
  • <b>MTGS Tool</b> is designed to securely access servers from safe environments and can run in parallel with antivirus or malware detection software.
  • It does not require complex drivers, as advanced processes are performed locally on computers specifically configured for those tasks.
 
+
 <i>Note: If you use a VPN, we recommend <a href="https://windscribe.com/download">Windscribe(Miami)</a>, it will improve connectivity with our servers.</i>
-
 <i>Using VPN locations far from America or Europe may increase latency and cause registration or login issues.</i>
-
-For more information, please contact our support team on the contact area on the main page or at the email <a href="mailto:soporte@mtgstool.com">soporte@mtgstool.com</a>.</pre>
+For more information, please contact our support team on the contact area on the main page or at the email <a href="mailto:soporte@mtgstool.com">soporte@mtgstool.com</a>.
 
 Thank you for trusting us.
 — The MTGS Tool Team
+                </pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span id="yearFooter"></span> © MTGS Tool. All rights reserved.
+    </div>
+
+    <script>
+        function updateTimeDisplay() {
+            const now = new Date();
+            const utc6 = new Date(now.getTime() - (6 * 60 * 60 * 1000));
+            
+            const timeStr = utc6.toLocaleTimeString('en-US', {
+                hour12: true,
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            });
+            
+            const days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
+            const months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 
+                          'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+            
+            const dayName = days[utc6.getDay()];
+            const monthName = months[utc6.getMonth()];
+            const dayNum = utc6.getDate();
+            const year = utc6.getFullYear();
+            
+            const dateStr = `${dayName}, ${dayNum} de ${monthName} de ${year}`;
+            document.getElementById('timeLabel').textContent = `Hora del Servidor (UTC-6): ${timeStr}  •  ${dateStr}`;
+        }
+        
+        function startClockTimer() {
+            updateTimeDisplay();
+            setInterval(updateTimeDisplay, 1000);
+        }
+        
+        document.getElementById('yearFooter').textContent = new Date().getFullYear();
+        window.addEventListener('load', startClockTimer);
+    </script>
 </body>
 </html>
